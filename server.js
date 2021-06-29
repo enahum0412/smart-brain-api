@@ -11,7 +11,7 @@ import image from './controllers/image.js';
 const db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1', //localhost
+      host : 'postgresql-pointy-59414', //localhost
       user : 'postgres', //add your user name for the database here
       password : 'test', //add your correct password in here
       database : 'smartbrain' //add your database name you created here
