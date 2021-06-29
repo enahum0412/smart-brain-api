@@ -11,10 +11,8 @@ import image from './controllers/image.js';
 const db = knex({
     client: 'pg',
     connection: {
-      host : 'postgresql-pointy-59414', //localhost
-      user : 'postgres', //add your user name for the database here
-      password : 'test', //add your correct password in here
-      database : 'smartbrain' //add your database name you created here
+      host : process.env.DATABASE_URL,
+      ssl: true
     }
 });
 
